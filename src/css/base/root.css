@@ -1,0 +1,5 @@
+:root{
+    --primary-color: rgb(255, 0, 0);
+    --primary-color-transparent: rgba(255, 0, 0, 0.15);
+    --secundary-color: #D8B784;
+}

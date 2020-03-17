@@ -1,0 +1,31 @@
+/* HEADER */
+header{
+    color: #fff;  
+    font-weight: 600;
+    background-color: var(--primary-color-transparent); 
+}
+    header #navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5em;
+    }
+        header #navbar .nav-logo 
+        ,header #navbar .nav-text 
+        ,header #navbar .nav-btn {
+            margin: 0;
+        }
+        header #navbar .nav-btn
+        ,header #navbar .nav-text {
+            font-size: 1.3em;
+            text-transform: uppercase;
+            margin: auto 0;
+        }
+        header #navbar .nav-text:hover{
+            color: var(--secundary-color);
+        }
+        header #navbar .nav-text{
+            text-transform: capitalize;
+            font-size: 3em;
+            font-family: 'MedievalSharp', cursive;
+            margin-right: auto;
+        }

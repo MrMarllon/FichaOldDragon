@@ -1,0 +1,18 @@
+$('#one').mouseover(function(){
+    $('#main').css({
+        'background-image':'url(/src/img/bg1.jpg)',
+        'transition-duration':'0.5s'
+    })
+})
+$('#two').mouseover(function(){
+    $('#main').css({
+        'background-image':'url(/src/img/bg2.jpg)',
+        'transition-duration':'0.5s'
+    })
+})
+$('#three').mouseover(function(){
+    $('#main').css({
+        'background-image':'url(/src/img/bg3.jpg)',
+        'transition-duration':'0.5s'
+    })
+})

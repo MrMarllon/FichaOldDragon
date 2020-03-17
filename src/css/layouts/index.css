@@ -1,0 +1,29 @@
+/* BODY */
+body{
+    background: url(/src/img/bg-main.jpg)no-repeat fixed;
+}
+/* MAIN */
+    main#main{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0;
+        border: 0;
+        padding: 0;
+        background: url(/src/img/bg1.jpg) no-repeat center;
+    }
+    #one,#two,#three{
+        text-align: center;
+        height: 1000px;
+        display: inline-block;
+        margin: 0;
+        border: 0;
+        background-color: transparent;
+    }
+
+    /* ONE */
+    
+    /* ONE */
+     
+    /* ONE */
+   

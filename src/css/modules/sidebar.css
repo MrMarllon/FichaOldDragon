@@ -1,0 +1,54 @@
+/* SIDEBAR MENU */
+#menu{
+    position: fixed;
+    width: 350px;
+    height: 100%;
+    background-color: var(--secundary-color);
+    transition: all 400ms linear;
+    right: -350px;
+    top: 0px;
+    padding-top: 2em;
+    color: #fff;
+}   
+    #menu.active{
+        right: 0px;
+    }   
+    #menu a.close{
+        display: block;
+        color: rgba(255, 255, 255, 0.8);
+        list-style: none;
+
+        font-size: 22pt;
+        font-weight: 900;
+        text-align: start;
+        
+        padding-left: 3rem;
+        margin: 0;
+    }
+        #menu a.close:hover{
+            color:  rgb(255, 255, 255);
+            cursor: pointer;
+        }    
+        #menu ul{
+            padding: 0 2rem;
+            margin: 0;
+            text-align: start;
+        }
+            #menu ul li{
+                padding: 1em;
+                margin-top: 5px;
+            }
+                #menu ul li:last-child{
+                    border-top: .5px solid rgba(255, 255, 255, 0.8);
+                }
+
+                #menu ul li h2{
+                    color: rgba(255, 255, 255, 0.8);
+                    font-size: 14pt;
+                    line-height: 3.5rem;
+                }
+                #menu ul li p{
+                    color: rgba(255, 255, 255, 0.8);
+                }
+
+            

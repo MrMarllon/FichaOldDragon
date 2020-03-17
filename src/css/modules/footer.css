@@ -1,0 +1,46 @@
+/* FOOTER */
+footer {
+    color: #fff;
+    background-color: var(--primary-color-transparent);
+    opacity: .95;
+}
+    footer a:hover{
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer;
+    }
+    footer .copyright {
+        display: block;
+        font-size: 1.3rem;
+        margin-top: 2em;
+        padding: 0;
+        text-align: center;
+    }
+    footer #inner{
+        text-align: center;
+        padding: 4em 0;
+    }
+        footer #inner .about {
+            text-align: start;
+        }
+            footer #inner .about h5{
+                font-size: 1.3em;
+                font-weight: bold;
+                font-family: 'MedievalSharp', cursive;
+            }
+            footer #inner .about h5,
+            footer #inner .about p{
+                letter-spacing: .8px;
+                margin-bottom: .8em;
+            }
+        #inner .about, #inner .socials{
+            width: 45%;
+            display: inline-block;
+        }
+        #inner .socials li:first-child{
+            margin-bottom: 0.5em;
+        }
+            #inner .socials li a{
+                font-size: 1.5em;
+                letter-spacing: .8px;
+                margin-right: .2em;
+            }
