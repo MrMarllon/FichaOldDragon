@@ -1,0 +1,31 @@
+/* INPUTS */
+#top input[type="text"],
+#top input[type="email"],
+#top input[type="number"]{
+    color: #fff;
+    background-color: var(--secundary-color-transparent);
+
+    padding: .7em;
+    border: none;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+}
+    #top input[type="text"]::placeholder{
+        color: #fff;
+    }
+
+#top i{
+    color: #fff;
+    background-color: var(--secundary-color);
+
+    padding: .7em;
+    border:solid 1px var(--secundary-color);
+    border-top-right-radius:15px;
+    border-bottom-right-radius:15px;
+    margin-left: -5px;
+}
+    #top i:hover{
+        background-color: var(--secundary-color-strong);
+        border: var(--secundary-color-strong);
+        cursor: pointer;
+    }

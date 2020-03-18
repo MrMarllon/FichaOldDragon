@@ -1,18 +1,35 @@
 $('#one').mouseover(function(){
-    $('#main').css({
-        'background-image':'url(/src/img/bg1.jpg)',
-        'transition-duration':'0.5s'
+
+    $(this).css({
+        'grid-column':'1/4'
+    })
+    $('#two').css({
+        'grid-column':'4/5'
+    })
+}).mouseleave(function(){
+
+    $(this).css({
+        'grid-column':'1/3'
+    })
+    $('#two').css({
+        'grid-column':'3/5'
     })
 })
+
 $('#two').mouseover(function(){
-    $('#main').css({
-        'background-image':'url(/src/img/bg2.jpg)',
-        'transition-duration':'0.5s'
+
+    $(this).css({
+        'grid-column':'2/5'
     })
-})
-$('#three').mouseover(function(){
-    $('#main').css({
-        'background-image':'url(/src/img/bg3.jpg)',
-        'transition-duration':'0.5s'
+    $('#one').css({
+        'grid-column':'1/2'
+    })
+}).mouseleave(function(){
+
+    $(this).css({
+        'grid-column':'3/5'
+    })
+    $('#one').css({
+        'grid-column':'1/3'
     })
 })

@@ -2,7 +2,6 @@
 footer {
     color: #fff;
     background-color: var(--primary-color-transparent);
-    opacity: .95;
 }
     footer a:hover{
         color: rgba(255, 255, 255, 0.8);
@@ -23,7 +22,7 @@ footer {
             text-align: start;
         }
             footer #inner .about h5{
-                font-size: 1.3em;
+                font-size: 1.5em;
                 font-weight: bold;
                 font-family: 'MedievalSharp', cursive;
             }

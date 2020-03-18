@@ -1,29 +1,34 @@
 /* SIDEBAR MENU */
 #menu{
-    position: fixed;
+    color: #fff;
     width: 350px;
     height: 100%;
     background-color: var(--secundary-color);
     transition: all 400ms linear;
+    position: fixed;
     right: -350px;
     top: 0px;
     padding-top: 2em;
-    color: #fff;
 }   
     #menu.active{
         right: 0px;
+    }   
+    #menu h2{
+        font-size: 2.2em;
+        padding: 0 3rem;
+        margin-bottom: 5px;
     }   
     #menu a.close{
         display: block;
         color: rgba(255, 255, 255, 0.8);
         list-style: none;
 
-        font-size: 22pt;
+        font-size: 2.5em;
         font-weight: 900;
         text-align: start;
         
         padding-left: 3rem;
-        margin: 0;
+        margin: 0  0  1em 0;
     }
         #menu a.close:hover{
             color:  rgb(255, 255, 255);
@@ -42,13 +47,21 @@
                     border-top: .5px solid rgba(255, 255, 255, 0.8);
                 }
 
-                #menu ul li h2{
+                #menu ul li h3{
                     color: rgba(255, 255, 255, 0.8);
                     font-size: 14pt;
                     line-height: 3.5rem;
                 }
                 #menu ul li p{
                     color: rgba(255, 255, 255, 0.8);
+                    margin-bottom: 1em;
                 }
+                    #menu ul li p a{
+                        font-size: 2em;
+                        margin-right: .5rem;
+                    }
+                        #menu ul li p a:hover{
+                            color: rgba(255, 255, 255, 0.5);
+                        }
 
             

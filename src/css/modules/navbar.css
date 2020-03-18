@@ -7,7 +7,7 @@ header{
     header #navbar {
         display: flex;
         justify-content: space-between;
-        padding: 1.5em;
+        padding:  0 1.2em;
     }
         header #navbar .nav-logo 
         ,header #navbar .nav-text 
@@ -20,12 +20,21 @@ header{
             text-transform: uppercase;
             margin: auto 0;
         }
-        header #navbar .nav-text:hover{
-            color: var(--secundary-color);
+        header #navbar .nav-logo {
+            margin-right: -10%;
         }
-        header #navbar .nav-text{
-            text-transform: capitalize;
-            font-size: 3em;
-            font-family: 'MedievalSharp', cursive;
-            margin-right: auto;
+        header #navbar .nav-btn {
+            font-size: 2.3em;
         }
+            header #navbar .nav-btn a:hover {
+                color: var(--secundary-color);
+            }
+
+            header #navbar .nav-text{
+                text-transform: capitalize;
+                font-size: 3em;
+                font-family: 'MedievalSharp', cursive;
+            }
+                header #navbar .nav-text:hover{
+                    color: var(--secundary-color);
+                }
