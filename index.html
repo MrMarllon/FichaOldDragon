@@ -6,20 +6,19 @@
     <title>Old Dragon - Ficha Edtável</title>
 
     <!-- Css Links -->
-    <link rel="stylesheet" href="/src/css/base/reset.css">
-    <link rel="stylesheet" href="/src/css/base/root.css">
-    <link rel="stylesheet" href="/src/css/base/generic.css">
+    <link rel="stylesheet" href="src/css/base/reset.css">
+    <link rel="stylesheet" href="src/css/base/root.css">
+    <link rel="stylesheet" href="src/css/base/generic.css">
     
-    <link rel="stylesheet" href="/src/css/containers/main-container.css">
+    <link rel="stylesheet" href="src/css/containers/main-container.css">
 
-    <link rel="stylesheet" href="/src/css/layouts/index.css">
+    <link rel="stylesheet" href="src/css/layouts/index.css">
 
-    <link rel="stylesheet" href="/src/css/modules/navbar.css">
-    <link rel="stylesheet" href="/src/css/modules/sidebar.css">
-    <link rel="stylesheet" href="/src/css/modules/footer.css">
-    <link rel="stylesheet" href="/src/css/modules/buttons.css">
-    <link rel="stylesheet" href="/src/css/modules/input.css">
-    
+    <link rel="stylesheet" href="src/css/modules/navbar.css">
+    <link rel="stylesheet" href="src/css/modules/sidebar.css">
+    <link rel="stylesheet" href="src/css/modules/footer.css">
+    <link rel="stylesheet" href="src/css/modules/buttons.css">
+    <link rel="stylesheet" href="src/css/modules/input.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
@@ -31,13 +30,13 @@
     <script src="https://kit.fontawesome.com/e28f022a91.js" crossorigin="anonymous"></script>
 
     <!-- HEADER -->
-    <header>
+    <header id="header">
 
         <!-- NAVBAR -->
         <nav id="navbar">
             <!-- NAVBAR LOGO -->
             <nav class="nav-logo">
-                <img src="/src/img/main-logo.png" alt="Logo Old Dragon" class="logo">
+                <img src="src/img/main-logo.png" alt="Logo Old Dragon" class="logo">
             </nav>
             <!-- NAVBAR TEXT -->
             <nav class="nav-text">
@@ -82,26 +81,22 @@
 
         <section id="one">
 
-            <div class="button_cont">
-                <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener"><i class="fas fa-plus"></i>Nova Ficha</a>
-            </div>
+            <div><a class="btn" id="btn-create-new" href="#" target="_blank" rel="nofollow noopener"><i class="fas fa-plus"></i>Nova Ficha</a></div>
             
         </section>
 
         <section id="two">
 
-            <div id="top">
+            <div class="imp imp-secundary">
                 <input type="text" name="search" placeholder="Procurar uma ficha..."/>
                 <i class="fas fa-search"></i>
             </div>
+
             <div id="buttons">
-                <div class="button_cont">
-                    <a class="example_e" href="#" target="_blank" rel="nofollow noopener"><i class="fas fa-edit"></i>Editar</a>
-                </div>
-                <div class="button_cont">
-                    <a class="example_e" href="#" target="_blank" rel="nofollow noopener"><i class="fas fa-print"></i>Imprimir</a>
-                </div>
+                <div><a class="btn" href="#" rel="nofollow noopener"><i class="fas fa-edit"></i>Editar</a></div>
+                <div><a class="btn" href="#" rel="nofollow noopener"><i class="fas fa-print"></i>Imprimir</a></div>
             </div>
+
         </section>
 
     </main>
@@ -115,24 +110,11 @@
 
                 <div class="about">
                     <h5>Sobre</h5>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut viverra porta fermentum. Nunc vel dui tempus, ultricies elit sed, sagittis tortor. Curabitur neque turpis, iaculis vitae maximus non, fringilla venenatis velit. Aliquam vel leo ac ipsum hendrerit rhoncus nec quis mi. Donec vel massa ac enim scelerisque pretium in accumsan ex. Donec ac ullamcorper enim.</p>
+                    <p>Projeto idealizado para facilitar a criação e editação de fichas de personagem do cenário Old Dragon. Desenvolvido para treinar e testar conhecimentos de criação de layouts e formulários, criação de um servidor local com acesso à banco de dados. Validação de formulários com AJAX/Fetch e manipulação de dados com JSON.</p>
                 </div>
 
-                <!-- <ul class="socials">
-                    <li>
-                        <a>Matheus Santos</a>
-                        <a class="fab fa-facebook"></a>
-                        <a class="fab fa-github"></a>
-                    </li>
-                    <li>
-                        <a>Marllon Silveira</a>
-                        <a class="fab fa-facebook"></a>
-                        <a class="fab fa-github"></a>
-                    </li>      
-                </ul> -->
-
                 <div class="copyright">
-                    <p>&copy; Untitled. All rights reserved.</p>
+                    <p>&copy; Ficha Edtável de Old Dragon. All rights reserved.</p>
                 </div>
 
             </div>
@@ -142,8 +124,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="/src/js/jquery.js"></script>
-    <script src="/src/js/sidebar.js"></script>
-    <script src="/src/js/main.js"></script>
+    <script src="src/js/jquery.js"></script>
+    <script src="src/js/sidebar.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>

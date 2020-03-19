@@ -1,40 +1,63 @@
 /* HEADER */
-header{
+#header {
     color: #fff;  
     font-weight: 600;
     background-color: var(--primary-color-transparent); 
 }
-    header #navbar {
+    #header #navbar {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
         padding:  0 1.2em;
     }
-        header #navbar .nav-logo 
-        ,header #navbar .nav-text 
-        ,header #navbar .nav-btn {
+        #header #navbar .nav-logo 
+        ,#header #navbar .nav-text 
+        ,#header #navbar .nav-btn {
             margin: 0;
         }
-        header #navbar .nav-btn
-        ,header #navbar .nav-text {
+        #header #navbar .nav-btn
+        ,#header #navbar .nav-text {
             font-size: 1.3em;
             text-transform: uppercase;
             margin: auto 0;
         }
-        header #navbar .nav-logo {
-            margin-right: -10%;
+        #header #navbar .nav-logo {
+            margin-right: auto;
         }
-        header #navbar .nav-btn {
+        #header #navbar .nav-logo img {
+            width: 250px;
+        }
+        #header #navbar .nav-btn {
             font-size: 2.3em;
+            margin-left: auto;
         }
-            header #navbar .nav-btn a:hover {
+            #header #navbar .nav-btn a:hover {
                 color: var(--secundary-color);
             }
 
-            header #navbar .nav-text{
+            #header #navbar .nav-text {
                 text-transform: capitalize;
                 font-size: 3em;
                 font-family: 'MedievalSharp', cursive;
             }
-                header #navbar .nav-text:hover{
+                #header #navbar .nav-text:hover{
                     color: var(--secundary-color);
                 }
+
+            @media(max-width: 900px){
+                #header #navbar .nav-text, #header #navbar .nav-btn{
+                    display: block;
+                    font-size: 2em;
+                }
+                #header #navbar .nav-logo img {
+                    width: 150px;
+                }
+            }
+            @media(max-width: 600px){
+                #header #navbar .nav-text, #header #navbar .nav-btn{
+                    display: block;
+                    font-size: 1em;
+                }
+                #header #navbar .nav-logo img {
+                    width: 100px;
+                }
+            }
