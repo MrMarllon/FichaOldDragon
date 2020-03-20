@@ -1,14 +1,17 @@
 :root{
 
     /* COLORS */
-    --primary-color: rgb(255, 0, 0);
-    --secundary-color: #D8B784;
-    
-    --primary-color-transparent: rgba(255, 0, 0, 0.15);
-    
-    --secundary-color-shadow: rgb(180, 108, 0);
-    --secundary-color-strong: rgb(128, 77, 0);
-    
-    --secundary-color-transparent: rgba(216, 182, 132, 0.8);
-    --secundary-color-transparent2: rgba(216, 182, 132, 0.3);
+
+        /* PRIMARY */
+        --primary-color: rgb(255, 0, 0);
+        --primary-color-transparent: rgba(255, 0, 0, 0.25);
+
+        /* PRIMARY */
+        --secundary-color: #D8B784;
+        
+        --secundary-color-shadow: rgb(180, 108, 0);
+        --secundary-color-strong: rgb(128, 77, 0);
+        
+        --secundary-color-transparent: rgba(216, 182, 132, 0.8);
+        --secundary-color-transparent2: rgba(216, 182, 132, 0.3);
 }

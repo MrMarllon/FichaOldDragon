@@ -1,0 +1,116 @@
+/* Buttons */
+input[type="submit"],
+button, button.btn,
+.btn {
+    display: inline;
+    color: #ffffff;
+    background: var(--secundary-color);
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+
+    padding: 20px;
+    border: none;
+    border-radius: 6px;
+}
+
+    input[type="submit"]:hover,
+    button.btn:hover,
+    button:hover, 
+    .btn:hover {
+        cursor: pointer;
+        color: var(--secundary-color);
+        background-color: #fff;
+        font-weight: bolder;
+        letter-spacing: 3px;
+        transition: all 0.3s ease 0s;
+
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+           -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57); 
+                box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    }   
+
+    input[type="submit"] i,
+    button i, button.btn i,
+    .btn i{
+        margin-right: 1em;
+    }
+
+/* INPUTS */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"]{
+    color: #fff;
+    font-size: 1em;
+
+    border: none;
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px;
+    padding: .7em;
+}
+
+    input[type="text"]::placeholder,
+    input[type="email"]::placeholder,
+    input[type="number"]::placeholder,
+    input[type="password"]::placeholder{
+        color: #fff;
+    } 
+    
+    input[type="text"]  + i,
+    input[type="email"] + i{
+        color: #fff;
+        font-size: 1em;
+
+        padding: .7em;
+        border: none;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        margin-left: -5px;
+    }
+    
+        input[type="text"]  + i:hover,
+        input[type="email"] + i:hover{
+            cursor: pointer;
+        }
+    
+/* PRIMARY */
+input[type="text"].imp-primary,
+input[type="email"].imp-primary,
+input[type="number"].imp-primary,
+input[type="password"].imp-primary{
+    background-color: var(--primary-color-transparent);
+}
+
+    input[type="text"].imp-primary  + i,
+    input[type="email"].imp-primary + i{
+        background-color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+    }
+
+        input[type="text"].imp-primary  + i:hover,
+        input[type="email"].imp-primary + i:hover{
+            color: var(--primary-color);
+            background-color: #fff;
+            border: 1px solid #fff;
+        }
+
+/* SECUNDARY */
+input[type="text"].imp-secundary,
+input[type="email"].imp-secundary,
+input[type="number"].imp-secundary,
+input[type="password"].imp-secundary{
+    background-color: var(--secundary-color-transparent);
+}
+
+    input[type="text"].imp-secundary  + i,
+    input[type="email"].imp-secundary + i{
+        background-color: var(--secundary-color);
+        border: 1px solid var(--secundary-color);
+    }
+
+        input[type="text"].imp-secundary  + i:hover,
+        input[type="email"].imp-secundary + i:hover{
+            color: var(--secundary-color);
+            background-color: #fff;
+            border: 1px solid #fff;
+        }

@@ -5,57 +5,71 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
-/* MAIN */
 
-    #main {
+/* MAIN */
+    main {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        background: black no-repeat top;
-        background-size: cover;
+
+        background: black 
+                    no-repeat 
+                    top 
+                    cover;
+
         transition: all 1s;
 
         margin:  0;
         border:  0;
         padding: 0;
     }
-    @media(max-width: 900px){
-        #main{
+
+    #one, #two {
+        display: inline-block;
+        text-align: center;
+        transition: all 1s;
+
+        background: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        border: 0;
+        padding: 15em 0;
+    }
+
+    @media screen and (max-width: 900px){
+
+        main, #one, #two{
             display: block;
         }
-        #one,#two {
-            display: block;
+
+        #one, #two {
             width: 100%;
         }
     }
-        #main #one, #main #two {
-            display: inline-block;
-            text-align: center;
-            transition: all 1s;
-
-            background: center no-repeat cover;
-            margin: 0;
-            border: 0;
-            padding: 15em 0;
-        }
 
     /* ONE */
     #one {
         background-image: url(../../img/bg1.jpg);
         grid-column: 1/3;
     }
+
     /* TWO */
     #two {
         background-image: url(../../img/bg3.jpg);
         grid-column: 3/5;
     }
+
         #two div {
             display: block;
+            margin-bottom: 1em;
         }
+
         #two #buttons {
-        margin-top: 10px;
+            margin-top: 10px;
         }
-            #two #buttons div{
+
+            #two div:last-child button{
                 display: inline-block;
             }
    

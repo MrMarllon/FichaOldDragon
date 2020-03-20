@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Old Dragon - Ficha Edtável</title>
 
     <!-- Css Links -->
@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="src/css/base/root.css">
     <link rel="stylesheet" href="src/css/base/generic.css">
     
-    <link rel="stylesheet" href="src/css/containers/main-container.css">
+    <link rel="stylesheet" href="src/css/containers/containers.css">
 
     <link rel="stylesheet" href="src/css/layouts/index.css">
 
     <link rel="stylesheet" href="src/css/modules/navbar.css">
     <link rel="stylesheet" href="src/css/modules/sidebar.css">
     <link rel="stylesheet" href="src/css/modules/footer.css">
-    <link rel="stylesheet" href="src/css/modules/buttons.css">
-    <link rel="stylesheet" href="src/css/modules/input.css">
+    <link rel="stylesheet" href="src/css/modules/components.css">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
@@ -34,27 +33,24 @@
 
         <!-- NAVBAR -->
         <nav id="navbar">
-            <!-- NAVBAR LOGO -->
-            <nav class="nav-logo">
-                <img src="src/img/main-logo.png" alt="Logo Old Dragon" class="logo">
-            </nav>
-            <!-- NAVBAR TEXT -->
-            <nav class="nav-text">
-                <p>Old Dragon - Ficha Online</p>
-            </nav>
-            <!-- NAVBAR SIDEBAR BTN -->
-            <nav class="nav-btn">
-                <a class="fas fa-bars"></a>
-            </nav>
+            <!-- LOGO -->
+            <div class="nav-logo"><img src="src/img/main-logo.png" alt="Logo Old Dragon" class="logo"></div>
+            <!-- TEXT -->
+            <div class="nav-text"><p>Old Dragon - Ficha Online</p></div>
+            <!-- SIDEBAR BTN -->
+            <div class="nav-btn"><a class="fas fa-bars"></a></div>
         </nav>
         
     </header>
 
     <!-- SIDEBAR -->
     <nav id="menu">
+
         <a href="#" class="close">&times;</a>
         <h2>Desenvolvedores</h2>
-        <ul class="links">
+
+        <ul>
+
             <li>
                 <h3>Matheus Duarte dos Santos</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin efficitur aliquet mi, et vehicula ligula feugiat quis. Ut sit amet tempor nunc. Integer sagittis iaculis blandit.</p>
@@ -64,6 +60,7 @@
                     <a class="fab fa-linkedin"></a>
                 </p>
             </li>
+
             <li>
                 <h3>Marllon Silveira Juan</h3>
                 <p>Aliquam vehicula tristique risus sed rhoncus. Phasellus ut tempor tellus, a molestie magna. Etiam non tortor dignissim, convallis erat vel, faucibus metus.</p>
@@ -73,28 +70,32 @@
                     <a class="fab fa-linkedin"></a>
                 </p>
             </li>
+
         </ul>
+
     </nav>
 
     <!-- MAIN -->
-    <main id="main">
+    <main>
 
         <section id="one">
 
-            <div><a class="btn" id="btn-create-new" href="#" target="_blank" rel="nofollow noopener"><i class="fas fa-plus"></i>Nova Ficha</a></div>
+            <button class="btn" id="plus"><i class="fas fa-plus"></i>Nova Ficha</button>
             
         </section>
 
         <section id="two">
 
-            <div class="imp imp-secundary">
-                <input type="text" name="search" placeholder="Procurar uma ficha..."/>
+            <div>
+                <input class="imp-secundary" type="text" name="search" placeholder="Procurar uma ficha..."/>
                 <i class="fas fa-search"></i>
             </div>
 
-            <div id="buttons">
-                <div><a class="btn" href="#" rel="nofollow noopener"><i class="fas fa-edit"></i>Editar</a></div>
-                <div><a class="btn" href="#" rel="nofollow noopener"><i class="fas fa-print"></i>Imprimir</a></div>
+            <!-- <div><p id="server-answer">...</p></div> -->
+
+            <div>
+                <button class="btn"><i class="fas fa-edit"></i>Editar</button>
+                <button class="btn"><i class="fas fa-print"></i>Imprimir</button>
             </div>
 
         </section>
