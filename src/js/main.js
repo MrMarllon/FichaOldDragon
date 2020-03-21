@@ -36,10 +36,3 @@
             'grid-column':'1/3'
         })
     })
-    
-    //add bnt listener
-
-    $('#btn-search').click(function(){
-        const value = $(this).value
-        
-    })

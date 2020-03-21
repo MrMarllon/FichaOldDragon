@@ -1,18 +1,3 @@
-// const http = require('http');
-
-// const hostname = '127.0.0.1';
-// const port = 3001;
-
-// const server = http.createServer((req, res) => {
-//   res.statusCode = 200;
-//   res.setHeader('Content-Type', 'text/plain');
-//   res.end('Hello World');
-// });
-
-// server.listen(port, hostname, () => {
-//   console.log(`Server running at http://${hostname}:${port}/`);
-// });
-
 // Configuraração inicial do servidor
 const express = require("express")
 const server = express()
@@ -24,19 +9,8 @@ server.use(express.static(path.join(__dirname,'src')))
 // Habiltiar body
 server.use(express.urlencoded({ extended: true}))
 
-
-
-
 // // Startando a página INDEX
 server.get("/", function(req, res){   
-   
-    // db.query("SELECT * FROM donors", function(err, result){
-
-    //     if(err) return res.send("Erro ao acessar o Bando de Dados!")
-
-    //     const donors = result.rows
-
-    // })
     return res.render("index.html")
 })
 
@@ -84,4 +58,3 @@ const port = 3000;
 server.listen(3000, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 })
-
