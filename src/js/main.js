@@ -1,4 +1,4 @@
-//Expanding and retracting iamge effect
+//Expanding and retracting image effect
 
     // #ONE
     $('#one').mouseover(function(){
