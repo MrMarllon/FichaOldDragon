@@ -24,15 +24,8 @@ server.use(express.static(path.join(__dirname,'src')))
 // Habiltiar body
 server.use(express.urlencoded({ extended: true}))
 
-// // Configurar Banco de Dados
-// const Pool = require('pg').Pool
-// const db = new Pool({
-//     user: 'postgres',
-//     password: '0000',
-//     host: 'localhost',
-//     port: 5432,
-//     database: 'donation'
-// })
+
+
 
 // // Startando a página INDEX
 server.get("/", function(req, res){   
@@ -91,3 +84,4 @@ const port = 3000;
 server.listen(3000, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 })
+
