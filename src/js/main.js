@@ -1,3 +1,5 @@
+import {returnFicha} from '../server.js';
+
 //Expanding and retracting image effect
 
     // #ONE
@@ -36,3 +38,11 @@
             'grid-column':'1/3'
         })
     })
+
+    //setando nome da ficha carregada
+
+    const ficha = returnFicha()
+
+    const p = $('#server-answer')
+
+    p.innerHTML(ficha.char_name)

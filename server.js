@@ -45,6 +45,21 @@ server.post("/", function(req, res){
         console.log('Falha!')
         return res.send("Por favor, primeiro procure por uma ficha!")
     }
+    
 
-    dbaccess.searchFile(value).then(() => res.sendStatus(200))
+    // module.exports = {
+
+    //     returnFicha(){
+    //         const ficha = dbaccess.searchFile(value)
+    //     }
+    // }
+    
+    function returnFicha(){
+         const ficha = dbaccess.searchFile(value)
+    }
+
+    export function returnFicha()
+
+    return res.redirect("/")
+
 })
