@@ -8,36 +8,44 @@ const db = mysql.createConnection({
     database:'dragon'
 })
 
-//Connecting to DB
-db.connect((err) => {
+module.exports = {
+    
+    searchFile(value){
 
-    if (err){
-        console.log('erro ao conectar', err)
-        return
+        //Connecting to DB
+        db.connect((err) => {
+        
+            if (err){
+                console.log('Erro ao conectar-se ao Banco de Dados', err)
+                return
+            }
+            console.log('Sucesso ao conectar-se ao Banco de Dados')
+        
+        })
+        
+        //Finishing DB
+        db.end((err) => {
+        
+            if (err){
+                console.log('Erro ao finalizar o Banco de Dados', err)
+                return
+            }
+            console.log('Sucesso em finalizar o Banco de Dados')
+        
+        })
+
+        //Searching selected ficha on DATABASE
+        db.query(`SELECT * FROM fichas WHERE char_name = ${value}`,(err, rows) =>{
+            
+            if(err){
+                //alert('O acesso ao Banco de Dados falhou!')
+                console.log('Falha ao acessar o Banco Dados')
+                throw err  
+            } 
+
+            console.log('Fichas: ',rows, '\n\n')
+            //alert('O acesso ao Banco de Dados foi concluído!')
+            
+        })
     }
-    console.log('funcionando')
-
-})
-
-//Finishing to DB
-db.end((err) => {
-
-    if (err){
-        console.log('erro ao finalizar', err)
-        return
-    }
-    console.log('finalizou')
-
-})
-
-// Acessing DB by pressing btn-search
-$('#btn-search').click(function(){
-
-    db.query(`select * from fichas where char_name = ${$('#search-value').value}`,(err, rows) =>{
-        if(err) throw err
-
-        console.log('Fichas: ',rows, '\n\n')
-        alert('O acesso ao Banco de Dados foi concluído!')
-    })
-
-})
+}   
